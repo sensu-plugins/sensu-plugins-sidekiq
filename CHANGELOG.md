@@ -1,6 +1,10 @@
-Change Log
+#Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-#### Pending
+This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
-#### 0.0.1.alpha.1
+## Unreleased][unreleased]
+
+## 0.0.1 - 2015-06-26
+### Added
+- initial release

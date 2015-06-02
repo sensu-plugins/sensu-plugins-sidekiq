@@ -1,18 +1,10 @@
-
 require 'bundler/gem_tasks'
-
 require 'rspec/core/rake_task'
-
 require 'yard'
-
 require 'github/markup'
-
 require 'rubocop/rake_task'
-
 require 'redcarpet'
-
 require 'yard/rake/yardoc_task'
-
 
 desc 'Don\'t run Rubocop for unsupported versions'
 begin
@@ -29,7 +21,7 @@ YARD::Rake::YardocTask.new do |t|
   t.options = %w(--markup-provider=redcarpet --markup=markdown --main=README.md --files CHANGELOG.md)
 end
 
-Rubocop::RakeTask.new
+RuboCop::RakeTask.new
 
 RSpec::Core::RakeTask.new(:spec) do |r|
   r.pattern = FileList['**/**/*_spec.rb']
