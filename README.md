@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-sidekiq/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-sidekiq)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-sidekiq/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-sidekiq)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-sidekiq.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-sidekiq)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-sidekiq](https://codeship.com/projects/807ab0e0-edcd-0132-0ba1-1efd3f886df2/status?branch=master)](https://codeship.com/projects/84126)
 
 ## Functionality
 
