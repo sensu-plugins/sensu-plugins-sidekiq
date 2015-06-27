@@ -13,11 +13,11 @@ pvt_key = '~/.ssh/gem-private_key.pem'
 
 Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
-  s.cert_chain             = ["certs/sensu-plugins.pem"]
+  s.cert_chain             = ['certs/sensu-plugins.pem']
   s.date                   = Date.today.to_s
   s.description            = 'Sensu sidekiq plugins'
   s.email                  = '<sensu-users@googlegroups.com>'
-  s.executables            = Dir.glob("bin/**/*.rb").map { |file| File.basename(file) }
+  s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-sidekiq'
   s.license                = 'MIT'
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
   s.summary                = 'Sensu plugins for sidekiq'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsSidekiq::VERSION
+  s.version                = SensuPluginsSidekiq::Version::VER_STRING
 
   s.add_runtime_dependency 'json',         '1.8.2'
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
