@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.email                  = '<sensu-users@googlegroups.com>'
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
-  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-hubot'
+  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-sidekiq'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => 'sensu-plugin',
                                'development_status' => 'active',
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
   s.summary                = 'Sensu plugins for sidekiq'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsHubot::Version::VER_STRING
+  s.version                = SensuPluginsSidekiq::Version::VER_STRING
 
   s.add_runtime_dependency 'json',         '1.8.2'
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
