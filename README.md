@@ -13,7 +13,7 @@ Check varius metrics and checks for Sidekiq.
 The following scripts:
 
  * bin/check-sidekiq.rb
- * bin/sidekiq-metris.rb
+ * bin/sidekiq-metrics.rb
  
 require [sidekiq-monitor-stats](https://github.com/harvesthq/sidekiq-monitor-stats)
 running on your application. Pass the `--url URL` option with the url to your monitor stats. Both scripts also accept a
@@ -47,7 +47,7 @@ Checks the dead queue and raises a CRITICAL if it's not empty. Jobs in the dead 
 
 ## Files
  * bin/check-sidekiq.rb
- * bin/sidekiq-metris.rb
+ * bin/sidekiq-metrics.rb
  * bin/check-sidekiq-dead-queue.rb
 
 ## Usage
