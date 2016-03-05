@@ -46,7 +46,7 @@ class SidekiqCheck < Sensu::Plugin::Check::CLI
     end
     dead_queue_size = stats['sidekiq']['dead']
     if !dead_queue_size.zero?
-      entry_or_entries =  dead_queue_size > 1 ? 'entries' : 'entry'
+      entry_or_entries = dead_queue_size > 1 ? 'entries' : 'entry'
       critical 'dead queue not empty (' + dead_queue_size.to_s + ' ' + entry_or_entries + ')'
     else
       ok 'sidekiq dead queue is empty'

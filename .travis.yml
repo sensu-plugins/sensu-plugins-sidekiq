@@ -16,13 +16,15 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-sidekiq.gemspec
+- gem install sensu-plugins-sidekiq-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: NDzLswIay1SahwDfXKOdBMbXxkhWc4z32dneZv0FwRjiIiHercMvkal/9SXZvtuACC0YWnT2fCutzfT5XJ7q2nquBzSierSRRuiUp260Mw7PmApPU2F4HkuzgtTYraouN4x1Acubr0Md1F1ZUxra9c+wbMtd7mvMmjAnYIaijDc=
+    secure: GDdqP68P1ej9kbdfAWNEHFCSMJJpwmLEf3iy1LqHvQIerggXNAKYKhC8+PlGgcTQ961J9N9Qp6H7IqWVXL9lTzYpKWqJIOiaB5Gk+QExtU5JdIGGcNvvkt10OSqTBZz0p0PwRiPEk6NrxEep02bk3tZOdNcI+ocY8WV3Vwbromg=
   gem: sensu-plugins-sidekiq
   on:
-    tags: true
+    ags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
