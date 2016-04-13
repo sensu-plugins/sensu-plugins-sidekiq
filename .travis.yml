@@ -24,7 +24,7 @@ deploy:
     secure: GDdqP68P1ej9kbdfAWNEHFCSMJJpwmLEf3iy1LqHvQIerggXNAKYKhC8+PlGgcTQ961J9N9Qp6H7IqWVXL9lTzYpKWqJIOiaB5Gk+QExtU5JdIGGcNvvkt10OSqTBZz0p0PwRiPEk6NrxEep02bk3tZOdNcI+ocY8WV3Vwbromg=
   gem: sensu-plugins-sidekiq
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
