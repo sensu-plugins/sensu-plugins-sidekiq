@@ -8,7 +8,7 @@
 
 ## Functionality
 
-Check varius metrics and checks for Sidekiq.
+Check various metrics and checks for Sidekiq.
 The following scripts:
 
  * bin/check-sidekiq.rb

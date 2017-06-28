@@ -1,9 +1,19 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Added
+- Support for Ruby 2.3 and 2.4 (@eheydrick)
+
+### Removed
+- Support for Ruby < 2 (@eheydrick)
+- Unnecessary `json` dependency (@eheydrick)
+
+### Changed
+- Loosen `sensu-plugin` dependency to `~> 1.2` (@mattyjones)
+- Update to Rubocop `0.40` and cleanup (@eheydrick)
 
 ## [0.1.0] - 2015-11-06
 ### Added
